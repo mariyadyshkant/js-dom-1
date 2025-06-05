@@ -9,7 +9,12 @@ console.log(button.innerHTML);
 // Quando avviene un certo evento (in questo caso il click sul bottone) devo far eseguire una funzione 
 
 button.addEventListener("click", function () {
-    button.innerHTML = "Spegni la lampadina";
-    lampadinaOff.className = "d-none";
+    if (button.innerHTML === "Accendi la lampadina") {
+        button.innerHTML = "Spegni la lampadina";
+    } else {
+        button.innerHTML = "Accendi la lampadina";
+    }
+    if (lampadinaOff.Off)
+        lampadinaOff.className = "d-none";
     lampadinaOn.className = "d-block";
 })
