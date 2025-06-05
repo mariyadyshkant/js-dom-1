@@ -10,5 +10,6 @@ console.log(button.innerHTML);
 
 button.addEventListener("click", function () {
     button.innerHTML = "Spegni la lampadina";
-    lampadinaOn.
+    lampadinaOff.className = "d-none";
+    lampadinaOn.className = "d-block";
 })
