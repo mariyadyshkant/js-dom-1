@@ -13,8 +13,10 @@
     <div class="container d-flex flex-column align-items-center">
         <div class="title h3 text-success text-center  border border-success-subtle border-4 rounded-2 px-5 py-2">Quando
             si accende la lampadina…<br> nasce l’ispirazione.</div>
-        <img src="./img/white_lamp.png" width="150" style="margin-left: 1.3rem" alt="lampadina spenta">
-        <button type="button" class="btn btn-success mt-3">Accendi la lampadina</button>
+        <img id="lampOff" src="./img/white_lamp.png" width="150" style="margin-left: 1.3rem" alt="lampadina spenta">
+        <img id="lampOn" class="d-none" src="./img/yellow_lamp.png" width="150" style="margin-right: 1.7rem;"
+            alt="lampadina accesa">
+        <button id="button" type="button" class="btn btn-success mt-3">Accendi la lampadina</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
