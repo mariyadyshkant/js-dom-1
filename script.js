@@ -14,7 +14,11 @@ button.addEventListener("click", function () {
     } else {
         button.innerHTML = "Accendi la lampadina";
     }
-    if (lampadinaOff.Off)
-        lampadinaOff.className = "d-none";
-    lampadinaOn.className = "d-block";
+    if (lampadinaOn.className === "d-none") {
+        lampadinaOn.className = "d-block";
+        lampadinaOff.className = "d-none"
+    } else {
+        lampadinaOn.className = "d-none";
+        lampadinaOff.className = "d-block";
+    }
 })
